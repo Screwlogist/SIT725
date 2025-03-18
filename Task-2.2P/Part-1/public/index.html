@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Express App</title>
+</head>
+<body>
+<h1>Hello from Express!</h1>
+<button id="fetchButton">Get Message</button>
+<div id="result"></div>
+
+<script>
+    document.getElementById('fetchButton').addEventListener('click', async () => {
+        try {
+            const response = await fetch('/hello');
+            const data = await response.json();
+            document.getElementById('result').textContent = data.message;
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    });
+</script>
+</body>
+</html>

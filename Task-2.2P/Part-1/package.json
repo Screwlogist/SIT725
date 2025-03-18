@@ -1,0 +1,14 @@
+{
+  "name": "part-1",
+  "version": "1.0.0",
+  "description": "Part 1 task of 2.2P",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
