@@ -1,0 +1,40 @@
+/* Custom styles for calculator app */
+
+.calculator-card {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.result-box {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+h4 {
+    margin-bottom: 30px;
+}
+
+/* Add some hover effects for button */
+.btn:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Animation for result display */
+.scale-in {
+    animation: scaleIn 0.3s ease-out;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
