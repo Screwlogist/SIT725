@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<h1>Task Manager</h1>
+
+<div id="message" class="message"></div>
+
+<!-- Add Task Form -->
+<form id="add-task-form">
+    <h2>Add New Task</h2>
+    <input type="text" id="title" placeholder="Task Title" required>
+    <textarea id="description" placeholder="Task Description"></textarea>
+    <button type="submit">Add Task</button>
+</form>
+
+<!-- Edit Task Form (Initially Hidden) -->
+<form id="edit-form">
+    <h2>Edit Task</h2>
+    <input type="hidden" id="edit-id">
+    <input type="text" id="edit-title" placeholder="Task Title" required>
+    <textarea id="edit-description" placeholder="Task Description"></textarea>
+    <div>
+        <label>
+            <input type="checkbox" id="edit-completed"> Completed
+        </label>
+    </div>
+    <button type="submit">Update Task</button>
+    <button type="button" id="cancel-edit">Cancel</button>
+</form>
+
+<!-- Tasks List -->
+<h2>Tasks</h2>
+<ul id="tasks-list"></ul>
+
+<script src="js/app.js"></script>
+</body>
+</html>
