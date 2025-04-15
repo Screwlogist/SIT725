@@ -1,0 +1,22 @@
+{
+  "name": "task-6.2d",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha test/**/*.js",
+    "test:report": "mocha test/**/*.js --reporter mochawesome"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2"
+  },
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "mocha": "^11.1.0",
+    "mochawesome": "^7.1.3"
+  }
+}
