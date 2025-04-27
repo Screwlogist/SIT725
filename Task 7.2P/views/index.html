@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h2>User Management System</h2>
+<input type="text" id="username" placeholder="Enter username">
+<input type="password" id="password" placeholder="Enter password">
+<button onclick="addUser()">Add User</button>
+
+<h3>Users:</h3>
+<ul id="userList"></ul>
+
+<div id="notifications">
+    <h3>Real-time Activity:</h3>
+    <ul id="activityList"></ul>
+</div>
+
+<!-- Load socket.io client BEFORE your custom scripts -->
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>
